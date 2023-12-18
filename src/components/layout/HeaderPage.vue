@@ -1,4 +1,21 @@
-<script setup></script>
+<script setup>
+import { ref, watch } from 'vue'
+
+import { useRoute } from 'vue-router'
+
+const route = useRoute()
+const currentRoute = ref(null)
+
+watch(
+  () => route.fullPath,
+  async () => {
+    currentRoute.value = route.fullPath
+  }
+)
+const isRouteActive = (route) => {
+  return currentRoute.value === route
+}
+</script>
 
 <template>
   <header class="header-page">
@@ -6,13 +23,21 @@
       <div class="header-logo">TuanXu</div>
       <div class="nav-menu">
         <ul class="list-menu">
-          <router-link to="/"><li class="item-menu">Home</li></router-link>
-          <li class="item-menu">About</li>
-          <router-link to="/projects">
-            <li class="item-menu active">Project</li>
+          <router-link to="/">
+            <li class="item-menu" :class="{ active: isRouteActive('/') }">Home</li>
           </router-link>
-          <li class="item-menu">Skills</li>
-          <router-link to="/contacts"><li class="item-menu">Contacts</li></router-link>
+          <router-link to="/about">
+            <li class="item-menu" :class="{ active: isRouteActive('/about') }">About</li>
+          </router-link>
+          <router-link to="/projects">
+            <li class="item-menu" :class="{ active: isRouteActive('/projects') }">Project</li>
+          </router-link>
+          <router-link to="/skills">
+            <li class="item-menu" :class="{ active: isRouteActive('/skills') }">Skills</li>
+          </router-link>
+          <router-link to="/contacts">
+            <li class="item-menu" :class="{ active: isRouteActive('/contacts') }">Contacts</li>
+          </router-link>
         </ul>
         <button class="button-cv">Curriculum Vitae</button>
       </div>
@@ -97,7 +122,7 @@
         }
       }
       .button-cv {
-        padding: 16px 24px;
+        padding: 20px 24px;
         background-color: #03030f;
         border-radius: 30px;
         color: white;

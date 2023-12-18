@@ -10,39 +10,33 @@
       <p class="sub-title">
         Just fill this simple form in and we will contact you promptly to
         <br />discuss your project. Hate forms? Drop me a line at <br />
-        <span class="email">lehoangtuan012@gmail.com</span>
+        <a href="mailto:lehoangtuan012@gmail.com">
+          <span class="email">lehoangtuan012@gmail.com</span>
+        </a>
       </p>
     </div>
     <div class="form-contact">
       <h5>Work with us</h5>
-      <form class="w-full max-w-lg">
-        <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-            <input
-              class="appearance-none block w-full bg-gray-200 text-gray-700 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
-              type="text"
-              placeholder="Your name"
-            />
+      <form class="w-full max-w-2xl">
+        <div class="flex flex-wrap -mx-3 w-full mb-6">
+          <div class="input-with-placeholder w-full md:w-1/2 px-3">
+            <input type="text" id="name" required />
+            <label for="Your name">Your name</label>
           </div>
-          <div class="w-full md:w-1/2 px-3">
-            <input
-              class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              type="text"
-              placeholder="Your email"
-            />
+          <div class="input-with-placeholder w-full md:w-1/2 px-3">
+            <input type="text" id="email" required />
+            <label for="Your email">Your email</label>
           </div>
         </div>
-        <div class="flex flex-wrap -mx-3 mb-6">
-          <div class="w-full px-3">
-            <textarea
-              class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
-              placeholder="Your message"
-            ></textarea>
+        <div class="flex flex-wrap w-full -mx-3 mb-6">
+          <div class="text-area-with-placeholder w-full px-3">
+            <textarea id="message" required></textarea>
+            <label for="Your message">Your message</label>
           </div>
         </div>
         <div class="md:flex md:items-center">
           <button
-            class="font-bold px-8 py-4 shadow-sm rounded-full block leading-normal border border-[#03030f] text-[#fff] bg-[#03030f]"
+            class="mt-10 font-bold px-8 py-4 shadow-sm rounded-full leading-normal border border-[#03030f] text-[#fff] bg-[#03030f]"
             type="button"
           >
             Send Request
@@ -103,6 +97,82 @@
         background: #03030f;
         transition: all 0.5s;
       }
+    }
+    .input-with-placeholder {
+      position: relative;
+      border: none;
+      outline: none;
+      label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 10px;
+        transition: 300ms all;
+        z-index: -1;
+      }
+      input {
+        width: 100%;
+        height: 60px;
+        background: transparent;
+        z-index: 1;
+        outline: none;
+        border: transparent;
+        border-bottom: 2px solid #03030f;
+        font-size: 16px;
+        padding: 0;
+      }
+    }
+
+    .input-with-placeholder input:focus + label,
+    .input-with-placeholder input:valid + label {
+      height: 50%;
+      padding-left: 12px;
+      transform: translateY(-100%);
+      font-size: 12px;
+      color: #777;
+    }
+
+    .text-area-with-placeholder {
+      position: relative;
+      border: none;
+      outline: none;
+      margin-top: 30px;
+      label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: start;
+        padding-left: 10px;
+        transition: 300ms all;
+        z-index: -1;
+      }
+      textarea {
+        width: 100%;
+        height: 60px;
+        background: transparent;
+        z-index: 1;
+        outline: none;
+        border: transparent;
+        border-bottom: 2px solid #03030f;
+        font-size: 16px;
+        padding: 0;
+      }
+    }
+
+    .text-area-with-placeholder textarea:focus + label,
+    .text-area-with-placeholder textarea:valid + label {
+      height: 30%;
+      padding-left: 12px;
+      transform: translateY(-100%);
+      font-size: 12px;
+      color: #777;
     }
   }
 }
