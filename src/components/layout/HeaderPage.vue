@@ -1,10 +1,11 @@
 <script setup>
-import { ref, watch } from 'vue'
+import { onBeforeUnmount, onMounted, ref, watch } from 'vue'
 
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
 const currentRoute = ref(null)
+const isScrolled = ref(false)
 
 watch(
   () => route.fullPath,
@@ -15,10 +16,22 @@ watch(
 const isRouteActive = (route) => {
   return currentRoute.value === route
 }
+
+onMounted(() => {
+  window.addEventListener('scroll', handleScroll)
+})
+
+onBeforeUnmount(() => {
+  window.removeEventListener('scroll', handleScroll)
+})
+
+const handleScroll = () => {
+  isScrolled.value = window.scrollY > 0 ? true : false
+}
 </script>
 
 <template>
-  <header class="header-page">
+  <header class="header-page" :class="{ 'is-scrolled': isScrolled }">
     <nav class="header-nav">
       <div class="header-logo">TuanXu</div>
       <div class="nav-menu">
@@ -57,8 +70,12 @@ const isRouteActive = (route) => {
   padding: 0 30px;
   height: 100px;
   background: hsla(0, 0%, 100%, 0.6);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
+  &.is-scrolled {
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(3, 3, 15, 0.2);
+  }
+
   .header-logo {
     font-size: 24px;
     font-weight: 700;

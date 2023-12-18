@@ -57,9 +57,9 @@ function onMouseHoverOut() {
 <template>
   <HeaderPage />
   <router-view />
-  <!-- <div class="custom-cursor">
+  <div class="custom-cursor">
     <div ref="cursorSmall" class="custom-cursor__ball custom-cursor__ball--small"></div>
-  </div> -->
+  </div>
 </template>
 
 <style scoped>
@@ -68,6 +68,8 @@ function onMouseHoverOut() {
   top: -2px;
   left: -2px;
   transition: opacity 0.5s ease;
+  pointer-events: none;
+  z-index: 999999;
 }
 
 .custom-cursor__ball--small {
@@ -76,5 +78,6 @@ function onMouseHoverOut() {
   height: 12px;
   background: #ffabf7;
   border-radius: 50%;
+  pointer-events: none;
 }
 </style>

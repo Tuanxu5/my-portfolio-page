@@ -140,7 +140,7 @@
       position: relative;
       border: none;
       outline: none;
-      margin-top: 30px;
+      margin-top: 60px;
       label {
         position: absolute;
         top: 0;
@@ -168,7 +168,7 @@
 
     .text-area-with-placeholder textarea:focus + label,
     .text-area-with-placeholder textarea:valid + label {
-      height: 30%;
+      height: 60%;
       padding-left: 12px;
       transform: translateY(-100%);
       font-size: 12px;
