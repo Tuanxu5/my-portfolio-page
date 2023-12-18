@@ -1,6 +1,7 @@
 <script setup>
 import gsap from 'gsap'
 import { onMounted, ref } from 'vue'
+import FooterPage from './components/layout/FooterPage.vue'
 import HeaderPage from './components/layout/HeaderPage.vue'
 
 const cursorBig = ref(null)
@@ -55,11 +56,12 @@ function onMouseHoverOut() {
 </script>
 
 <template>
-  <HeaderPage />
-  <router-view />
   <div class="custom-cursor">
     <div ref="cursorSmall" class="custom-cursor__ball custom-cursor__ball--small"></div>
   </div>
+  <HeaderPage />
+  <router-view />
+  <FooterPage />
 </template>
 
 <style scoped>

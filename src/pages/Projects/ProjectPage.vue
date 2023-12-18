@@ -121,7 +121,7 @@ const toggleTabs = (tabNumber) => {
     &:hover {
       color: #fff;
       z-index: 3;
-      transition-delay: 0.5s;
+      transition-delay: 1s;
     }
     &:before {
       content: '';
@@ -135,13 +135,13 @@ const toggleTabs = (tabNumber) => {
       z-index: 1;
       transition-property: left, transform;
       transition-delay: 0s, 0s;
-      transition-duration: 0.5s, 0.25s;
+      transition-duration: 1s, 0.5s;
       opacity: 0;
     }
     &:hover:before {
       left: 10px;
       transform: translateY(-50%) scale(50);
-      transition-delay: 0s, 0.5s;
+      transition-delay: 0s, 1s;
       opacity: 1;
       background: #03030f;
       z-index: -1;
@@ -158,13 +158,13 @@ const toggleTabs = (tabNumber) => {
       z-index: 1;
       transition-property: right, transform;
       transition-delay: 0s, 0s;
-      transition-duration: 0.5s, 0.25s;
+      transition-duration: 1s, 0.5s;
       opacity: 0;
     }
     &:hover:after {
       right: 10px;
       transform: translateY(-50%) scale(50);
-      transition-delay: 0s, 0.5s;
+      transition-delay: 0s, 1s;
       opacity: 1;
       background: #03030f;
       z-index: -1;

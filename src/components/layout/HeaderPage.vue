@@ -33,7 +33,10 @@ const handleScroll = () => {
 <template>
   <header class="header-page" :class="{ 'is-scrolled': isScrolled }">
     <nav class="header-nav">
-      <div class="header-logo">TuanXu</div>
+      <div class="header-logo">
+        <img src="../../assets/icons/icon_logo_project.svg" height="24" width="24" alt="" />
+        <span>TuanXu</span>
+      </div>
       <div class="nav-menu">
         <ul class="list-menu">
           <router-link to="/">
@@ -79,6 +82,9 @@ const handleScroll = () => {
   .header-logo {
     font-size: 24px;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 4px;
   }
   .header-nav {
     display: flex;

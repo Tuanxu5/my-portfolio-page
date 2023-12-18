@@ -49,7 +49,7 @@
 
 <style scoped>
 .contact-page {
-  padding: 150px 200px 50px 200px;
+  padding: 150px 200px 30px 200px;
   .title-page {
     .main-title {
       font-size: 60px;
@@ -133,7 +133,7 @@
       padding-left: 12px;
       transform: translateY(-100%);
       font-size: 12px;
-      color: #777;
+      color: #03030f80;
     }
 
     .text-area-with-placeholder {
@@ -172,7 +172,7 @@
       padding-left: 12px;
       transform: translateY(-100%);
       font-size: 12px;
-      color: #777;
+      color: #03030f80;
     }
   }
 }
