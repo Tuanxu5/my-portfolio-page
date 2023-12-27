@@ -40,7 +40,9 @@ const handleScroll = () => {
       <div class="nav-menu">
         <ul class="list-menu">
           <router-link to="/">
-            <li class="item-menu" :class="{ active: isRouteActive('/') }">Home</li>
+            <li class="item-menu" :class="{ active: isRouteActive('/') || isRouteActive(null) }">
+              Home
+            </li>
           </router-link>
           <router-link to="/about">
             <li class="item-menu" :class="{ active: isRouteActive('/about') }">About</li>
@@ -55,6 +57,16 @@ const handleScroll = () => {
             <li class="item-menu" :class="{ active: isRouteActive('/contacts') }">Contacts</li>
           </router-link>
         </ul>
+        <div>
+          <div class="toggle colour">
+            <input id="check3" class="toggle-checkbox hidden" type="checkbox" />
+            <label
+              for="check3"
+              class="toggle-label block w-[24px] h-[14px] rounded-full transition-color duration-150 ease-out"
+            >
+            </label>
+          </div>
+        </div>
         <button class="button-cv">Curriculum Vitae</button>
       </div>
     </nav>
@@ -95,7 +107,7 @@ const handleScroll = () => {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 50px;
+      gap: 40px;
       font-size: 16px;
       .list-menu {
         display: flex;
@@ -144,10 +156,58 @@ const handleScroll = () => {
           }
         }
       }
+      .toggle-label {
+        position: relative;
+        &:before {
+          position: absolute;
+          top: 1px;
+          left: 1px;
+          display: block;
+          content: '';
+          width: 11px;
+          height: 11px;
+          border-radius: 9999%;
+          background-color: #03030f;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: 40%;
+          transition: transform 0.5s cubic-bezier(0, 0, 0.5, 1);
+          transform: translateX(0);
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+      }
+
+      .toggle-checkbox:checked + .toggle-label:before {
+        transform: translateX(10px);
+        background-color: #fff;
+      }
+
+      .toggle {
+        &.slim {
+          .toggle-label:before {
+            top: -0.15rem;
+            left: 0;
+          }
+
+          .toggle-checkbox:checked + .toggle-label:before {
+            transform: translateX(1.75rem);
+          }
+        }
+        &.colour {
+          .toggle-label {
+            background-color: #fff;
+            border: 1px solid #03030f;
+          }
+          .toggle-checkbox:checked + .toggle-label {
+            background-color: #03030f;
+          }
+        }
+      }
+
       .button-cv {
         padding: 20px 24px;
         background-color: #03030f;
-        border-radius: 30px;
+        border-radius: 100px;
         color: white;
         font-weight: 600;
       }

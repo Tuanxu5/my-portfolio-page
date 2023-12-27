@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import ProjectPage from '../pages/Projects/ProjectPage.vue'
 import ContactPage from '../pages/Contacts/ContactPage.vue'
+import ProjectPage from '../pages/Projects/ProjectPage.vue'
+import SkillPage from '../pages/Skills/SkillPage.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -12,6 +13,10 @@ const router = createRouter({
     {
       path: '/contacts',
       component: ContactPage
+    },
+    {
+      path: '/skills',
+      component: SkillPage
     }
   ]
 })

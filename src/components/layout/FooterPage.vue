@@ -11,6 +11,29 @@ const topFunction = () => {
     <nav class="nav-footer">
       <span class="all-right">© 2023 Tuanxu. All rights reserved.</span>
     </nav>
+    <div class="list-contact">
+      <a href="https://www.linkedin.com/in/tuanxu5/" target="_blank">
+        <button class="contact-item">
+          <img src="../../assets/icons/icon_contact_linkedIn.svg" />
+        </button>
+      </a>
+      <a href="https://github.com/Tuanxu5" target="_blank">
+        <button class="contact-item">
+          <img src="../../assets/icons/icon_contact_github.svg" />
+        </button>
+      </a>
+
+      <a href="https://www.instagram.com/tuann__n/" target="_blank">
+        <button class="contact-item">
+          <img src="../../assets/icons/icon_contact_intasgram.svg" />
+        </button>
+      </a>
+      <a href="https://www.facebook.com/tunnxu5/" target="_blank">
+        <button class="contact-item">
+          <img src="../../assets/icons/icon_contact_facebook.svg" />
+        </button>
+      </a>
+    </div>
     <button class="to-top" @click="topFunction">
       <img src="../../assets/icons/icon_to_top.svg" />
     </button>
@@ -32,20 +55,37 @@ const topFunction = () => {
   .to-top {
     cursor: pointer;
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    right: 25px;
+    bottom: 25px;
     width: 40px;
     height: 40px;
     background-color: #03030f;
     color: #fff;
-    border-radius: 100%;
+    border-radius: 16px;
     display: flex;
     justify-content: center;
     align-items: center;
-
     img {
       width: 16px;
       height: 16px;
+    }
+  }
+  .list-contact {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 25px;
+    bottom: 25px;
+    gap: 8px;
+    .contact-item {
+      width: 35px;
+      height: 35px;
+      background-color: #03030f;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 100%;
+      padding: 10px;
     }
   }
 }
