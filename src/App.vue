@@ -1,8 +1,8 @@
 <script setup>
-import gsap from 'gsap'
-import { onMounted, ref } from 'vue'
-import FooterPage from './components/layout/FooterPage.vue'
-import HeaderPage from './components/layout/HeaderPage.vue'
+import gsap from 'gsap';
+import { onMounted, ref } from 'vue';
+import HeaderPage from './components/layout/HeaderPage.vue';
+import FooterPage from './components/layout/FooterPage.vue';
 
 const cursorBig = ref(null)
 const cursorSmall = ref(null)
@@ -64,7 +64,16 @@ function onMouseHoverOut() {
   <FooterPage />
 </template>
 
-<style scoped>
+<style>
+.icon_all {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: top;
+  background: url(/Users/admin/my-profile/src/assets/icons/icon_all.svg);
+  background-position: 30px 30px;
+}
+
 .custom-cursor__ball {
   position: fixed;
   top: -2px;
@@ -78,7 +87,7 @@ function onMouseHoverOut() {
   content: '';
   width: 12px;
   height: 12px;
-  background: #ffabf7;
+  background: #69ccfe;
   border-radius: 50%;
   pointer-events: none;
 }

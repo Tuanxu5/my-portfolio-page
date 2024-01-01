@@ -1,7 +1,6 @@
 <script setup>
-import { onBeforeUnmount, onMounted, ref, watch } from 'vue'
-
-import { useRoute } from 'vue-router'
+import { onBeforeUnmount, onMounted, ref, watch } from 'vue';
+import { useRoute } from 'vue-router';
 
 const route = useRoute()
 const currentRoute = ref(null)
@@ -41,11 +40,8 @@ const handleScroll = () => {
         <ul class="list-menu">
           <router-link to="/">
             <li class="item-menu" :class="{ active: isRouteActive('/') || isRouteActive(null) }">
-              Home
+              About
             </li>
-          </router-link>
-          <router-link to="/about">
-            <li class="item-menu" :class="{ active: isRouteActive('/about') }">About</li>
           </router-link>
           <router-link to="/projects">
             <li class="item-menu" :class="{ active: isRouteActive('/projects') }">Project</li>
@@ -53,17 +49,21 @@ const handleScroll = () => {
           <router-link to="/skills">
             <li class="item-menu" :class="{ active: isRouteActive('/skills') }">Skills</li>
           </router-link>
-          <router-link to="/contacts">
+          <router-link to="/tools">
+            <li class="item-menu" :class="{ active: isRouteActive('/tools') }">Tools</li>
+          </router-link>
+          <!-- <router-link to="/contacts">
             <li class="item-menu" :class="{ active: isRouteActive('/contacts') }">Contacts</li>
+          </router-link> -->
+          <router-link to="/donates">
+            <li class="item-menu" :class="{ active: isRouteActive('/donates') }">Buy me a coffee</li>
           </router-link>
         </ul>
         <div>
           <div class="toggle colour">
             <input id="check3" class="toggle-checkbox hidden" type="checkbox" />
-            <label
-              for="check3"
-              class="toggle-label block w-[24px] h-[14px] rounded-full transition-color duration-150 ease-out"
-            >
+            <label for="check3"
+              class="toggle-label block w-[24px] h-[14px] rounded-full transition-color duration-150 ease-out">
             </label>
           </div>
         </div>
@@ -83,8 +83,9 @@ const handleScroll = () => {
   color: #03030f;
   z-index: 10;
   padding: 0 30px;
-  height: 100px;
+  height: 80px;
   background: hsla(0, 0%, 100%, 0.6);
+
   &.is-scrolled {
     -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
@@ -98,27 +99,32 @@ const handleScroll = () => {
     align-items: center;
     gap: 4px;
   }
+
   .header-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
+
     .nav-menu {
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 40px;
       font-size: 16px;
+
       .list-menu {
         display: flex;
         justify-content: space-between;
         align-items: center;
         gap: 60px;
         font-weight: 700;
+
         .item-menu {
           position: relative;
           transition: all 0.5s;
           cursor: pointer;
+
           &:before {
             position: absolute;
             left: 0;
@@ -129,6 +135,7 @@ const handleScroll = () => {
             content: '';
             transition: all 0.5s;
           }
+
           &:hover {
             &:before {
               position: absolute;
@@ -142,8 +149,10 @@ const handleScroll = () => {
             }
           }
         }
+
         .active {
           position: relative;
+
           &:before {
             position: absolute;
             left: 0;
@@ -156,16 +165,18 @@ const handleScroll = () => {
           }
         }
       }
+
       .toggle-label {
         position: relative;
+
         &:before {
           position: absolute;
           top: 1px;
           left: 1px;
           display: block;
           content: '';
-          width: 11px;
-          height: 11px;
+          width: 10px;
+          height: 10px;
           border-radius: 9999%;
           background-color: #03030f;
           background-position: center;
@@ -177,7 +188,7 @@ const handleScroll = () => {
         }
       }
 
-      .toggle-checkbox:checked + .toggle-label:before {
+      .toggle-checkbox:checked+.toggle-label:before {
         transform: translateX(10px);
         background-color: #fff;
       }
@@ -189,16 +200,18 @@ const handleScroll = () => {
             left: 0;
           }
 
-          .toggle-checkbox:checked + .toggle-label:before {
+          .toggle-checkbox:checked+.toggle-label:before {
             transform: translateX(1.75rem);
           }
         }
+
         &.colour {
           .toggle-label {
             background-color: #fff;
             border: 1px solid #03030f;
           }
-          .toggle-checkbox:checked + .toggle-label {
+
+          .toggle-checkbox:checked+.toggle-label {
             background-color: #03030f;
           }
         }
