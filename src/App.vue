@@ -1,8 +1,8 @@
 <script setup>
 import gsap from 'gsap';
 import { onMounted, ref } from 'vue';
-import HeaderPage from './components/layout/HeaderPage.vue';
 import FooterPage from './components/layout/FooterPage.vue';
+import HeaderPage from './components/layout/HeaderPage.vue';
 
 const cursorBig = ref(null)
 const cursorSmall = ref(null)
@@ -78,16 +78,16 @@ function onMouseHoverOut() {
   position: fixed;
   top: -2px;
   left: -2px;
-  transition: opacity 0.5s ease;
+  transition: opacity 1s ease;
   pointer-events: none;
   z-index: 999999;
 }
 
 .custom-cursor__ball--small {
   content: '';
-  width: 12px;
-  height: 12px;
-  background: #69ccfe;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(190.05deg, #98e8fc -16.32%, #1fa9ff 56.32%, #8980f6 115.25%);
   border-radius: 50%;
   pointer-events: none;
 }

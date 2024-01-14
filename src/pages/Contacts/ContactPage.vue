@@ -37,8 +37,7 @@
         <div class="md:flex md:items-center">
           <button
             class="mt-10 font-bold px-8 py-4 shadow-sm rounded-full leading-normal border border-[#03030f] text-[#fff] bg-[#03030f]"
-            type="button"
-          >
+            type="button">
             Send Request
           </button>
         </div>
@@ -50,15 +49,18 @@
 <style scoped>
 .contact-page {
   padding: 150px 200px 30px 200px;
+
   .title-page {
     .main-title {
       font-size: 60px;
       font-weight: 700;
       line-height: 60px;
     }
+
     .sub-title {
       margin-top: 50px;
       line-height: 24px;
+
       .email {
         background: linear-gradient(to bottom right, #26a0f8, #ff6df1);
         -webkit-background-clip: text;
@@ -66,6 +68,7 @@
         text-decoration: underline;
         position: relative;
         cursor: pointer;
+
         &:before {
           content: '';
           position: absolute;
@@ -79,14 +82,17 @@
       }
     }
   }
+
   .form-contact {
     margin-top: 50px;
+
     h5 {
       position: relative;
       font-weight: 600;
       width: fit-content;
       margin-bottom: 60px;
       font-size: 20px;
+
       &:before {
         content: '';
         position: absolute;
@@ -98,10 +104,12 @@
         transition: all 0.5s;
       }
     }
+
     .input-with-placeholder {
       position: relative;
       border: none;
       outline: none;
+
       label {
         position: absolute;
         top: 0;
@@ -114,6 +122,7 @@
         transition: 300ms all;
         z-index: -1;
       }
+
       input {
         width: 100%;
         height: 60px;
@@ -127,8 +136,8 @@
       }
     }
 
-    .input-with-placeholder input:focus + label,
-    .input-with-placeholder input:valid + label {
+    .input-with-placeholder input:focus+label,
+    .input-with-placeholder input:valid+label {
       height: 50%;
       padding-left: 12px;
       transform: translateY(-100%);
@@ -141,6 +150,7 @@
       border: none;
       outline: none;
       margin-top: 60px;
+
       label {
         position: absolute;
         top: 0;
@@ -153,6 +163,7 @@
         transition: 300ms all;
         z-index: -1;
       }
+
       textarea {
         width: 100%;
         height: 60px;
@@ -166,8 +177,8 @@
       }
     }
 
-    .text-area-with-placeholder textarea:focus + label,
-    .text-area-with-placeholder textarea:valid + label {
+    .text-area-with-placeholder textarea:focus+label,
+    .text-area-with-placeholder textarea:valid+label {
       height: 60%;
       padding-left: 12px;
       transform: translateY(-100%);
@@ -175,5 +186,4 @@
       color: #03030f80;
     }
   }
-}
-</style>
+}</style>

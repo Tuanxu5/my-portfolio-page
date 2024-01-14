@@ -9,7 +9,7 @@ const topFunction = () => {
 <template>
   <footer class="footer-page">
     <nav class="nav-footer">
-      <span class="all-right">© 2023 Tuanxu. All rights reserved.</span>
+      <span class="all-right">© 2024 Tuanxu. All rights reserved.</span>
     </nav>
     <div class="list-contact">
       <a href="https://www.linkedin.com/in/tuanxu5/" target="_blank">
@@ -44,14 +44,17 @@ const topFunction = () => {
   padding: 100px 200px 30px 200px;
   width: 100%;
   height: 100%;
+
   .nav-footer {
     display: flex;
     justify-content: space-between;
+
     .all-right {
       font-size: 14px;
       color: #03030f80;
     }
   }
+
   .to-top {
     cursor: pointer;
     position: fixed;
@@ -65,11 +68,13 @@ const topFunction = () => {
     display: flex;
     justify-content: center;
     align-items: center;
+
     img {
       width: 16px;
       height: 16px;
     }
   }
+
   .list-contact {
     display: flex;
     flex-direction: column;
@@ -77,6 +82,7 @@ const topFunction = () => {
     left: 25px;
     bottom: 25px;
     gap: 8px;
+
     .contact-item {
       width: 35px;
       height: 35px;
@@ -88,5 +94,4 @@ const topFunction = () => {
       padding: 10px;
     }
   }
-}
-</style>
+}</style>
