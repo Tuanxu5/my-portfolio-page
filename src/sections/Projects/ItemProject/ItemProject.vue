@@ -18,7 +18,7 @@ console.log(props?.project);
             </div>
             <button class="w-[120px] bg-black h-[50px] text-[#fff] rounded-full text-sm mt-5">Show more</button>
         </div>
-        <div class="">
+        <div>
             <img :src="props?.project?.image" height="200">
         </div>
     </section>

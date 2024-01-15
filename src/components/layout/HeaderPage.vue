@@ -52,12 +52,12 @@ const handleScroll = () => {
           <router-link to="/tools">
             <li class="item-menu" :class="{ active: isRouteActive('/tools') }">Tools</li>
           </router-link>
-          <!-- <router-link to="/contacts">
+          <router-link to="/contacts">
             <li class="item-menu" :class="{ active: isRouteActive('/contacts') }">Contacts</li>
-          </router-link> -->
-          <router-link to="/donates">
-            <li class="item-menu" :class="{ active: isRouteActive('/donates') }">Buy me a coffee</li>
           </router-link>
+          <!-- <router-link to="/donates">
+            <li class="item-menu" :class="{ active: isRouteActive('/donates') }">Buy me a coffee</li>
+          </router-link> -->
         </ul>
         <div>
           <div class="toggle colour">
@@ -67,7 +67,9 @@ const handleScroll = () => {
             </label>
           </div>
         </div>
-        <button class="button-cv">Curriculum Vitae</button>
+        <a href="https://drive.google.com/file/d/17L2w4xwv94PEyIy4VsiZmQtjQgtXWXTp/view?usp=sharing" target="_blank">
+          <button class="button-cv">Curriculum Vitae</button>
+        </a>
       </div>
     </nav>
   </header>

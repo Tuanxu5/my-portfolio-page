@@ -1,6 +1,8 @@
 <script setup>
+import ContactComponent from '@/components/ContactComponent.vue';
 import TitlePageComponent from '@/components/TitlePageComponent.vue';
 import ListProjectSection from '@/sections/Projects/ListProjectSection.vue';
+
 
 </script>
 <template>
@@ -8,6 +10,8 @@ import ListProjectSection from '@/sections/Projects/ListProjectSection.vue';
     <TitlePageComponent title="Projects" :subTitle="`Take a look at some of the ideas <br />
         we’ve helped to implement. Will yours be next?`" />
     <ListProjectSection />
+    <ContactComponent />
+
   </main>
 </template>
 

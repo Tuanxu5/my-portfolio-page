@@ -3,7 +3,7 @@ import ContactPage from "../pages/Contacts/ContactPage.vue"
 import ProjectPage from "../pages/Projects/ProjectPage.vue"
 import SkillPage from "../pages/Skills/SkillPage.vue"
 import ToolsPage from "../pages/Tools/ToolsPage.vue"
-import ToolsDetail from "../pages/Tools/components/ToolsDetail.vue"
+import ToolsDetailPage from "../pages/Tools/ToolsDetailPage.vue"
 import AboutPage from "../pages/About/AboutPage.vue"
 
 const router = createRouter({
@@ -32,7 +32,7 @@ const router = createRouter({
     {
       path: "/tools/:id",
       name: "toolsDetail",
-      component: ToolsDetail,
+      component: ToolsDetailPage,
       props: true
     }
   ]

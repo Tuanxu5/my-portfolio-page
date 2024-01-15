@@ -20,9 +20,7 @@ import MyGoalSection from './MyGoal/MyGoalSection.vue';
         <ImageFirstSection />
         <ExperienceSection />
         <!-- <EducationSection /> -->
-
         <ContactComponent />
-
     </main>
 </template>
 

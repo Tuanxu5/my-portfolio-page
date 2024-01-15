@@ -1,5 +1,4 @@
 <script setup>
-import ContactComponent from '@/components/ContactComponent.vue';
 import { ref } from 'vue';
 import { mockDataProject } from '../../mock/_mockProject';
 import ContentProjectSection from "./ContentProjectSection.vue";
@@ -14,9 +13,7 @@ const projects = ref(mockDataProject);
     <section class="container flex flex-wrap mt-[-80px]">
         <TabProjectSection :toggleTabs="toggleTabs" :openTab="openTab" :projects="projects" />
         <ContentProjectSection :openTab="openTab" :projects="projects" />
-        <div class="mt-20">
-            <ContactComponent />
-        </div>
+
     </section>
 </template>
 
