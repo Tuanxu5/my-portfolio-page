@@ -8,7 +8,7 @@
             <div class="flex flex-col gap-16 border-l-[1.5px] pl-[33px]">
                 <div class="experience-items">
                     <div class="flex justify-between items-center gap-10">
-                        <h1 class="text-[26px] font-bold leading-7">C-GROUP Global Joint Stock Company</h1>
+                        <h1 class="text-[26px] font-bold leading-7">Hong Anh Computer Company Limited</h1>
                         <time class="text-[13px] min-w-max">Aug 2022 - Present</time>
                     </div>
                     <div class="flex flex-col gap-4 mt-2">

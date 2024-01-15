@@ -4,6 +4,18 @@ export const mockDataProject = [
     tab: "All Project",
     children: [
       {
+        id: 3,
+        type: "Website",
+        image: "https://ronasit.com/img/cases/page/dark/oddscrowd-web.webp",
+        name: "My Portfolio",
+        background: "#F8F3FF",
+        title:
+          "Lainappi is a cross-platform application for taking and giving items for rent. Our work was to build an MVP within 3 months, so our customers could test their business idea on the market.",
+        link: "#",
+        techStack: ["VueJs", "Tailwind Css", "Sass", "Vue Router", "Gsap"],
+        isLeft: true
+      },
+      {
         id: 1,
         type: "Website",
         image: "https://ronasit.com/img/cases/page/dark/oddscrowd-web.webp",
@@ -22,7 +34,7 @@ export const mockDataProject = [
           "Apollo GraphQL",
           "Netlify"
         ],
-        isLeft: true
+        isLeft: false
       },
       {
         id: 2,
@@ -34,15 +46,58 @@ export const mockDataProject = [
           "Lainappi is a cross-platform application for taking and giving items for rent. Our work was to build an MVP within 3 months, so our customers could test their business idea on the market.",
         link: "#",
         techStack: [
-          "ReactJS",
-          "NextJS",
-          "Sass",
-          "Ant Design",
+          "Flutter",
+          "RxDart",
+          "Flutter Bloc",
+          "Flutter Cubit",
           "GraphQL",
-          "Nx Console",
-          "Apollo GraphQL",
-          "Netlify"
+          "FlagSmith",
+          "Firebase"
         ],
+        isLeft: true
+      },
+      {
+        id: 3,
+        type: "Website App",
+        image: "https://ronasit.com/img/cases/page/dark/oddscrowd-web.webp",
+        name: "Hong Anh Shop Seller",
+        background: "#f5f8fa",
+        title:
+          "Lainappi is a cross-platform application for taking and giving items for rent. Our work was to build an MVP within 3 months, so our customers could test their business idea on the market.",
+        link: "#",
+        techStack: [
+          "Flutter",
+          "RxDart",
+          "Flutter Bloc",
+          "Flutter Cubit",
+          "GraphQL",
+          "FlagSmith",
+          "Firebase"
+        ],
+        isLeft: false
+      },
+      {
+        id: 3,
+        type: "Website",
+        image: "https://ronasit.com/img/cases/page/dark/oddscrowd-web.webp",
+        name: "Hong Anh Landing Page",
+        background: "#f5f8fa",
+        title:
+          "Lainappi is a cross-platform application for taking and giving items for rent. Our work was to build an MVP within 3 months, so our customers could test their business idea on the market.",
+        link: "#",
+        techStack: ["ReactJS", "NextJS", "Sass", "Ant Design"],
+        isLeft: true
+      },
+      {
+        id: 3,
+        type: "Website",
+        image: "https://ronasit.com/img/cases/page/dark/oddscrowd-web.webp",
+        name: "My Project Tiktok Clone",
+        background: "#f5f8fa",
+        title:
+          "Lainappi is a cross-platform application for taking and giving items for rent. Our work was to build an MVP within 3 months, so our customers could test their business idea on the market.",
+        link: "#",
+        techStack: ["HTML5", "CSS3", "Javascript"],
         isLeft: false
       }
     ]
@@ -51,6 +106,18 @@ export const mockDataProject = [
     id: 2,
     tab: "Web App",
     children: [
+      {
+        id: 3,
+        type: "Website",
+        image: "https://ronasit.com/img/cases/page/dark/oddscrowd-web.webp",
+        name: "My Portfolio",
+        background: "#F8F3FF",
+        title:
+          "Lainappi is a cross-platform application for taking and giving items for rent. Our work was to build an MVP within 3 months, so our customers could test their business idea on the market.",
+        link: "#",
+        techStack: ["VueJs", "Tailwind Css", "Sass", "Vue Router", "Gsap"],
+        isLeft: true
+      },
       {
         id: 1,
         type: "Website",
@@ -70,6 +137,50 @@ export const mockDataProject = [
           "Apollo GraphQL",
           "Netlify"
         ],
+        isLeft: false
+      },
+      {
+        id: 3,
+        type: "Website App",
+        image: "https://ronasit.com/img/cases/page/dark/oddscrowd-web.webp",
+        name: "Hong Anh Shop Seller",
+        background: "#f5f8fa",
+        title:
+          "Lainappi is a cross-platform application for taking and giving items for rent. Our work was to build an MVP within 3 months, so our customers could test their business idea on the market.",
+        link: "#",
+        techStack: [
+          "Flutter",
+          "RxDart",
+          "Flutter Bloc",
+          "Flutter Cubit",
+          "GraphQL",
+          "FlagSmith",
+          "Firebase"
+        ],
+        isLeft: true
+      },
+      {
+        id: 3,
+        type: "Website",
+        image: "https://ronasit.com/img/cases/page/dark/oddscrowd-web.webp",
+        name: "Hong Anh Landing Page",
+        background: "#f5f8fa",
+        title:
+          "Lainappi is a cross-platform application for taking and giving items for rent. Our work was to build an MVP within 3 months, so our customers could test their business idea on the market.",
+        link: "#",
+        techStack: ["ReactJS", "NextJS", "Sass", "Ant Design"],
+        isLeft: false
+      },
+      {
+        id: 3,
+        type: "Website",
+        image: "https://ronasit.com/img/cases/page/dark/oddscrowd-web.webp",
+        name: "My Project Tiktok Clone",
+        background: "#f5f8fa",
+        title:
+          "Lainappi is a cross-platform application for taking and giving items for rent. Our work was to build an MVP within 3 months, so our customers could test their business idea on the market.",
+        link: "#",
+        techStack: ["HTML5", "CSS3", "Javascript"],
         isLeft: true
       }
     ]
@@ -79,7 +190,7 @@ export const mockDataProject = [
     tab: "Mobile App",
     children: [
       {
-        id: 2,
+        id: 1,
         type: "Flutter mobile app",
         image: "https://ronasit.com/img/cases/page/dark/noah.webp",
         name: "Hong Anh App Seller",
@@ -88,16 +199,15 @@ export const mockDataProject = [
           "Lainappi is a cross-platform application for taking and giving items for rent. Our work was to build an MVP within 3 months, so our customers could test their business idea on the market.",
         link: "#",
         techStack: [
-          "ReactJS",
-          "NextJS",
-          "Sass",
-          "Ant Design",
+          "Flutter",
+          "RxDart",
+          "Flutter Bloc",
+          "Flutter Cubit",
           "GraphQL",
-          "Nx Console",
-          "Apollo GraphQL",
-          "Netlify"
+          "FlagSmith",
+          "Firebase"
         ],
-        isLeft: false
+        isLeft: true
       }
     ]
   },

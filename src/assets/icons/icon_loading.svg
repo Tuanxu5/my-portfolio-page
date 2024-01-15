@@ -1,0 +1,11 @@
+<svg id="Layer_1" enable-background="new 0 0 512 512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <g id="Layer_2_00000157273504757490380100000010922761391240685453_">
+    <g id="Layer_2-2">
+      <g id="_37">
+        <circle cx="150" cy="150" r="50"/> <!-- First circle -->
+        <circle cx="362" cy="150" r="50"/> <!-- Second circle -->
+        <circle cx="256" cy="362" r="50"/> <!-- Third circle -->
+      </g>
+    </g>
+  </g>
+</svg>

@@ -3,13 +3,14 @@ import { onBeforeUnmount, onMounted, ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
 
 const route = useRoute()
-const currentRoute = ref(null)
+const currentRoute = ref(route.fullPath || "")
 const isScrolled = ref(false)
 
 watch(
   () => route.fullPath,
   async () => {
     currentRoute.value = route.fullPath
+    window.scrollTo(0, 0);
   }
 )
 const isRouteActive = (route) => {

@@ -1,6 +1,5 @@
 <script setup>
 const props = defineProps(["project"])
-console.log(props?.project);
 </script>
 <template>
     <section class="flex px-[100px] py-10 gap-10 rounded-[32px] items-center min-h-[500px] relative overflow-hidden "
