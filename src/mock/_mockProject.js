@@ -20,7 +20,7 @@ export const mockDataProject = [
         type: "Website",
         image: "https://ronasit.com/img/cases/page/dark/oddscrowd-web.webp",
         name: "Hong Anh Ops",
-        background: "#f8f8f8",
+        background: "#E7FBFF",
         title:
           "Lainappi is a cross-platform application for taking and giving items for rent. Our work was to build an MVP within 3 months, so our customers could test their business idea on the market.",
         link: "#",
@@ -41,7 +41,7 @@ export const mockDataProject = [
         type: "Flutter mobile app",
         image: "https://ronasit.com/img/cases/page/dark/noah.webp",
         name: "Hong Anh App Seller",
-        background: "#e9f0fe",
+        background: "#EAF1FF",
         title:
           "Lainappi is a cross-platform application for taking and giving items for rent. Our work was to build an MVP within 3 months, so our customers could test their business idea on the market.",
         link: "#",
@@ -81,7 +81,7 @@ export const mockDataProject = [
         type: "Website",
         image: "https://ronasit.com/img/cases/page/dark/oddscrowd-web.webp",
         name: "Hong Anh Landing Page",
-        background: "#f5f8fa",
+        background: "#ECF8FF",
         title:
           "Lainappi is a cross-platform application for taking and giving items for rent. Our work was to build an MVP within 3 months, so our customers could test their business idea on the market.",
         link: "#",
@@ -93,7 +93,7 @@ export const mockDataProject = [
         type: "Website",
         image: "https://ronasit.com/img/cases/page/dark/oddscrowd-web.webp",
         name: "My Project Tiktok Clone",
-        background: "#f5f8fa",
+        background: "#E9FFF5",
         title:
           "Lainappi is a cross-platform application for taking and giving items for rent. Our work was to build an MVP within 3 months, so our customers could test their business idea on the market.",
         link: "#",
@@ -176,7 +176,7 @@ export const mockDataProject = [
         type: "Website",
         image: "https://ronasit.com/img/cases/page/dark/oddscrowd-web.webp",
         name: "My Project Tiktok Clone",
-        background: "#f5f8fa",
+        background: "#FFE7EB",
         title:
           "Lainappi is a cross-platform application for taking and giving items for rent. Our work was to build an MVP within 3 months, so our customers could test their business idea on the market.",
         link: "#",

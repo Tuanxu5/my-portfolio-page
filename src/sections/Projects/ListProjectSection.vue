@@ -13,7 +13,6 @@ const projects = ref(mockDataProject);
     <section class="container flex flex-wrap mt-[-80px]">
         <TabProjectSection :toggleTabs="toggleTabs" :openTab="openTab" :projects="projects" />
         <ContentProjectSection :openTab="openTab" :projects="projects" />
-
     </section>
 </template>
 

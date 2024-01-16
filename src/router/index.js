@@ -5,6 +5,7 @@ import SkillPage from "../pages/Skills/SkillPage.vue"
 import ToolsPage from "../pages/Tools/ToolsPage.vue"
 import ToolsDetailPage from "../pages/Tools/ToolsDetailPage.vue"
 import AboutPage from "../pages/About/AboutPage.vue"
+import DetailPage from "../pages/Projects/DetailPage.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -33,6 +34,12 @@ const router = createRouter({
       path: "/tools/:id",
       name: "toolsDetail",
       component: ToolsDetailPage,
+      props: true
+    },
+    {
+      path: "/projects/:id",
+      name: "projectDetail",
+      component: DetailPage,
       props: true
     }
   ]
