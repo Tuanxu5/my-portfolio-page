@@ -13,7 +13,8 @@ export const mockDataProject = [
           "Lainappi is a cross-platform application for taking and giving items for rent. Our work was to build an MVP within 3 months, so our customers could test their business idea on the market.",
         link: "#",
         techStack: ["VueJs", "Tailwind Css", "Sass", "Vue Router", "Gsap"],
-        isLeft: true
+        isLeft: true,
+        redirectLink: "my-portfolio"
       },
       {
         id: 1,
@@ -34,7 +35,8 @@ export const mockDataProject = [
           "Apollo GraphQL",
           "Netlify"
         ],
-        isLeft: false
+        isLeft: false,
+        redirectLink: "honganh-ops"
       },
       {
         id: 2,
@@ -54,7 +56,8 @@ export const mockDataProject = [
           "FlagSmith",
           "Firebase"
         ],
-        isLeft: true
+        isLeft: true,
+        redirectLink: "honganh-app-seller"
       },
       {
         id: 3,
@@ -74,7 +77,8 @@ export const mockDataProject = [
           "FlagSmith",
           "Firebase"
         ],
-        isLeft: false
+        isLeft: false,
+        redirectLink: "honganh-shop-seller"
       },
       {
         id: 3,
@@ -86,7 +90,8 @@ export const mockDataProject = [
           "Lainappi is a cross-platform application for taking and giving items for rent. Our work was to build an MVP within 3 months, so our customers could test their business idea on the market.",
         link: "#",
         techStack: ["ReactJS", "NextJS", "Sass", "Ant Design"],
-        isLeft: true
+        isLeft: true,
+        redirectLink: "honganh-landing-page"
       },
       {
         id: 3,
@@ -98,7 +103,8 @@ export const mockDataProject = [
           "Lainappi is a cross-platform application for taking and giving items for rent. Our work was to build an MVP within 3 months, so our customers could test their business idea on the market.",
         link: "#",
         techStack: ["HTML5", "CSS3", "Javascript"],
-        isLeft: false
+        isLeft: false,
+        redirectLink: "tiktok-clone"
       }
     ]
   },

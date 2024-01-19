@@ -186,7 +186,7 @@ body {
 
     .therefore {
         justify-content: center;
-        animation: rotate 0.75s linear infinite;
+        animation: rotate 0.5s linear infinite;
     }
 
     .loading-number {
