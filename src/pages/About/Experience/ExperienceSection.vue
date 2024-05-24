@@ -1,7 +1,5 @@
 <script setup>
-import CollapseComponent from "@/components/collapse/CollapseComponent.vue";
-
-
+import CollapseComponentVue from '../../../components/shared/Collapse/CollapseComponent.vue';
 </script>
 <template>
     <section class="container px-[140px] flex flex-wrap">
@@ -18,7 +16,7 @@ import CollapseComponent from "@/components/collapse/CollapseComponent.vue";
                             <p class="font-semibold leading-8 text-[18px]">
                                 Position: FrontEnd Developer && Flutter Developer
                             </p>
-                            <CollapseComponent :title="`<div>Show more</div>`"></CollapseComponent>
+                            <CollapseComponentVue :title="`<div>Show more</div>`" />
                         </div>
                     </div>
                 </div>
@@ -66,7 +64,6 @@ import CollapseComponent from "@/components/collapse/CollapseComponent.vue";
         position: absolute;
         background-color: #03030f;
         border: 12px solid #d4ecfe;
-        /* top: -5px; */
         left: -50px;
     }
 }

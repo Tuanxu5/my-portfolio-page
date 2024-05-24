@@ -1,7 +1,8 @@
 <script setup>
-import ButtonPrimary from '@/components/button/button-primary/ButtonPrimary.vue';
+import ButtonPrimary from '@/components/shared/Button/ButtonPrimary/ButtonPrimary.vue';
 import { onBeforeUnmount, onMounted, ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
+import ToggleComponentVue from '../shared/Radio/ToggleComponent.vue';
 
 const route = useRoute()
 const currentRoute = ref(route.fullPath || "")
@@ -57,18 +58,8 @@ const handleScroll = () => {
           <router-link to="/contacts">
             <li class="item-menu" :class="{ active: isRouteActive('/contacts') }">Contacts</li>
           </router-link>
-          <!-- <router-link to="/donates">
-            <li class="item-menu" :class="{ active: isRouteActive('/donates') }">Buy me a coffee</li>
-          </router-link> -->
         </ul>
-        <div>
-          <div class="toggle color">
-            <input id="check3" class="toggle-checkbox hidden" type="checkbox" />
-            <label for="check3"
-              class="toggle-label block w-[24px] h-[14px] rounded-full transition-color duration-150 ease-out">
-            </label>
-          </div>
-        </div>
+        <ToggleComponentVue />
         <a href="https://drive.google.com/file/d/17L2w4xwv94PEyIy4VsiZmQtjQgtXWXTp/view?usp=sharing" target="_blank">
           <ButtonPrimary title="Curriculum Vitae" />
         </a>
@@ -169,59 +160,6 @@ const handleScroll = () => {
           }
         }
       }
-
-      .toggle-label {
-        position: relative;
-
-        &:before {
-          position: absolute;
-          top: 1px;
-          left: 1px;
-          display: block;
-          content: '';
-          width: 10px;
-          height: 10px;
-          border-radius: 9999%;
-          background-color: #03030f;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: 40%;
-          transition: transform 0.5s cubic-bezier(0, 0, 0.5, 1);
-          transform: translateX(0);
-          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-        }
-      }
-
-      .toggle-checkbox:checked+.toggle-label:before {
-        transform: translateX(10px);
-        background-color: #fff;
-      }
-
-      .toggle {
-        &.slim {
-          .toggle-label:before {
-            top: -0.15rem;
-            left: 0;
-          }
-
-          .toggle-checkbox:checked+.toggle-label:before {
-            transform: translateX(1.75rem);
-          }
-        }
-
-        &.color {
-          .toggle-label {
-            background-color: transparent;
-            border: 1px solid #03030f;
-          }
-
-          .toggle-checkbox:checked+.toggle-label {
-            background-color: #03030f;
-          }
-        }
-      }
-
-
     }
   }
 }
