@@ -1,10 +1,13 @@
 <script setup>
 import ContactComponent from '@/components/ContactComponent.vue';
 import TitlePageComponent from '@/components/TitlePageComponent.vue';
+import ListProjectSection from '../../sections/Projects/ListProjectSection.vue';
 import ImageFirstSection from './AboutListImage/ImageFirstSection.vue';
 import ImageParallaxSection from './AboutListImage/ImageParallaxSection.vue';
 import ExperienceSection from './Experience/ExperienceSection.vue';
 import MyGoalSection from './MyGoal/MyGoalSection.vue';
+import StatsSection from './StatsSection/StatsSection.vue';
+
 
 
 
@@ -16,10 +19,14 @@ import MyGoalSection from './MyGoal/MyGoalSection.vue';
             name="Hi, I'm Tuan Xu" />
         <ImageParallaxSection />
         <MyGoalSection />
-        <!-- <StatsSection /> -->
+        <StatsSection />
+        <TitlePageComponent title="Projects" :subTitle="`Take a look at some of the ideas <br />
+        we’ve helped to implement. Will yours be next?`" />
+        <ListProjectSection />
         <ImageFirstSection />
+        <TitlePageComponent title="Experience" :subTitle="`Take a look at some of the ideas <br />
+        we’ve helped to implement. Will yours be next?`" />
         <ExperienceSection />
-        <!-- <EducationSection /> -->
         <ContactComponent />
     </main>
 </template>

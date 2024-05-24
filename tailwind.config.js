@@ -7,4 +7,4 @@ export const content = [
 export const theme = {
   extend: {}
 }
-export const plugins = ["flowbite/plugin", "tw-elements/dist/plugin.cjs"]
+export const plugins = ["flowbite/plugin", "tw-elements/dist/plugin.cjs", "daisyui"]

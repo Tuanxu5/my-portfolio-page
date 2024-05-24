@@ -1,4 +1,5 @@
 <script setup>
+import ButtonPrimary from '@/components/button/button-primary/ButtonPrimary.vue';
 import { onBeforeUnmount, onMounted, ref, watch } from 'vue';
 import { useRoute } from 'vue-router';
 
@@ -48,10 +49,10 @@ const handleScroll = () => {
             <li class="item-menu" :class="{ active: isRouteActive('/projects') }">Project</li>
           </router-link>
           <router-link to="/skills">
-            <li class="item-menu" :class="{ active: isRouteActive('/skills') }">Skills</li>
+            <li class="item-menu" :class="{ active: isRouteActive('/skills') }">Experience</li>
           </router-link>
           <router-link to="/tools">
-            <li class="item-menu" :class="{ active: isRouteActive('/tools') }">Tools</li>
+            <li class="item-menu" :class="{ active: isRouteActive('/tools') }">Skills</li>
           </router-link>
           <router-link to="/contacts">
             <li class="item-menu" :class="{ active: isRouteActive('/contacts') }">Contacts</li>
@@ -61,7 +62,7 @@ const handleScroll = () => {
           </router-link> -->
         </ul>
         <div>
-          <div class="toggle colour">
+          <div class="toggle color">
             <input id="check3" class="toggle-checkbox hidden" type="checkbox" />
             <label for="check3"
               class="toggle-label block w-[24px] h-[14px] rounded-full transition-color duration-150 ease-out">
@@ -69,7 +70,7 @@ const handleScroll = () => {
           </div>
         </div>
         <a href="https://drive.google.com/file/d/17L2w4xwv94PEyIy4VsiZmQtjQgtXWXTp/view?usp=sharing" target="_blank">
-          <button class="button-cv">Curriculum Vitae</button>
+          <ButtonPrimary title="Curriculum Vitae" />
         </a>
       </div>
     </nav>
@@ -208,9 +209,9 @@ const handleScroll = () => {
           }
         }
 
-        &.colour {
+        &.color {
           .toggle-label {
-            background-color: #fff;
+            background-color: transparent;
             border: 1px solid #03030f;
           }
 
@@ -220,13 +221,7 @@ const handleScroll = () => {
         }
       }
 
-      .button-cv {
-        padding: 20px 24px;
-        background-color: #03030f;
-        border-radius: 100px;
-        color: white;
-        font-weight: 600;
-      }
+
     }
   }
 }

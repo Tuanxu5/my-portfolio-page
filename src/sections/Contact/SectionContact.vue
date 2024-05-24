@@ -4,7 +4,6 @@
 </script>
 <template>
     <main class="container px-[140px] flex flex-wrap flex-col mt-[-80px] pt-[50px] w-full">
-        <!-- <ModalBuyCoffee /> -->
         <div class="sub-title leading-6">
             Just fill this simple form in and we will contact you promptly to
             <br />discuss your project. Hate forms? Drop me a line at <br />
@@ -135,7 +134,8 @@ h5 {
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: fit-content;
+        max-height: fit-content;
         display: flex;
         align-items: start;
         padding-left: 10px;
@@ -153,6 +153,7 @@ h5 {
         border-bottom: 2px solid #03030f;
         font-size: 16px;
         padding: 0;
+        resize: none;
     }
 }
 
