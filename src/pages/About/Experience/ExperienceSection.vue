@@ -1,4 +1,6 @@
 <script setup>
+import CollapseComponent from "@/components/collapse/CollapseComponent.vue";
+
 
 </script>
 <template>
@@ -13,7 +15,10 @@
                     </div>
                     <div class="flex flex-col gap-4 mt-2">
                         <div class="flex flex-col gap-2">
-                            <p class="font-semibold leading-8 text-[18px]">FrontEnd Developer && Flutter Developer</p>
+                            <p class="font-semibold leading-8 text-[18px]">
+                                Position: FrontEnd Developer && Flutter Developer
+                            </p>
+                            <CollapseComponent :title="`<div>Show more</div>`"></CollapseComponent>
                         </div>
                     </div>
                 </div>
@@ -26,7 +31,19 @@
                     </div>
                     <div class="flex flex-col gap-4 mt-2">
                         <div class="flex flex-col gap-2">
-                            <p class="font-semibold leading-8 text-[18px]">Frontend Talent Internship</p>
+                            <p class="font-semibold leading-8 text-[18px]">Position: Frontend Talent Internship</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience-items">
+                    <div class="flex justify-between items-center gap-10">
+                        <h1 class="text-[26px] font-bold leading-7">Hung Yen University of Technology and Education
+                        </h1>
+                        <time class="text-[13px] min-w-max">Aug 2019 - Jun 2023</time>
+                    </div>
+                    <div class="flex flex-col gap-4 mt-2">
+                        <div class="flex flex-col gap-2">
+                            <p class="font-semibold leading-8 text-[18px]">Position: Student Talent</p>
                         </div>
                     </div>
                 </div>

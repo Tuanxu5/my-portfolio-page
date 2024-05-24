@@ -22,10 +22,12 @@
     "vue-router": "^4.2.2"
   },
   "devDependencies": {
+    "@locator/runtime": "^0.4.3",
     "@rushstack/eslint-patch": "^1.2.0",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vue/eslint-config-prettier": "^7.1.0",
     "@vue/test-utils": "^2.3.2",
+    "daisyui": "^4.11.1",
     "eslint": "^8.39.0",
     "eslint-plugin-vue": "^9.11.0",
     "jsdom": "^22.1.0",
